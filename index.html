@@ -1,7 +1,122 @@
+<!DOCTYPE html>
 <html>
-    <head></head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Web Talks.io">
+
+        <title>Web Talks.io</title>
+
+        <style type="text/css">
+         * {
+             margin: 0;
+             padding: 0;
+             box-sizing: border-box;
+             font-family: Avenir;
+             color: #222;
+             line-height: 1.4;
+         }
+
+         h1, h2, h3 {
+             font-family: Avenir;
+             color: #333;
+         }
+
+         p {
+             font-size: 2vw;
+         }
+
+         ul, li {
+             list-style: none;
+         }
+
+         .lead h1 {
+             padding: 12vw 14vw 0vw 14vw;
+             background: #75a27e;
+             -webkit-background-clip: text;
+             -webkit-text-stroke: 7px transparent;
+             color: #111;
+             font-size: 8vw;
+             font-weight: 900;
+             margin: 0;
+         }
+
+         .lead h2, .lead h3 {
+             font-size: 4vw;
+             padding: 0vw 14vw 0vw 14vw;
+             width: 100%;
+             color: #eeeeee;
+             background: #111;
+             background-clip: text;
+             -webkit-background-clip: text;
+             text-stroke: 3px transparent;
+             -webkit-text-stroke: 3px transparent;
+         }
+
+         h2 {
+             color: #fff;
+             font-style: italic;
+             width: fit-content;
+         }
+
+         .lead {
+             width: 100%;
+             height: 100vh;
+             background: url('./bg.jpg');
+             background-size: cover;
+             background-position-x: 50%;
+         }
+
+         .content {
+             padding: 6vw;
+             width: 100%;
+         }
+
+         .content h1 {
+             font-size: 2.5vw;
+             color: #333;
+             padding-bottom: 1rem;
+         }
+
+         .speakers ul {
+             display: flex;
+             margin: 0 -2vw;
+         }
+
+         .speakers li {
+             width: 33%;
+             height: 200px;
+             border-bottom: 1px solid #333;
+             margin: 0 2vw;
+         }
+
+         .meetup-photo {
+             background: url(./conf.meetup.jpeg);
+             background-size: cover;
+             background-position-y: center;
+         }
+
+         .row {
+             display: flex;
+             flex-wrap: wrap;
+         }
+
+         .row > * {
+             width: 50%;
+         }
+
+         .centered {
+             background: #fff;
+             padding: 12vw 15vw;
+         }
+        </style>
+    </head>
 
     <body>
-        <h1>hello</h1>
+        <section class="lead">
+            <h1>Web Talks.io</h1>
+            <h2>JavaScript conference</h2>
+            <h3>May 22, 2020, Kraków</h3>
+        </section>
     </body>
 </html>
