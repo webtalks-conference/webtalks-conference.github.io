@@ -32,17 +32,18 @@
 
          .lead h1 {
              padding: 12vw 14vw 0vw 14vw;
+             font-size: 12vw;
+
              background: #75a27e;
              -webkit-background-clip: text;
              -webkit-text-stroke: 7px transparent;
              color: #111;
-             font-size: 8vw;
              font-weight: 900;
              margin: 0;
          }
 
          .lead h2, .lead h3 {
-             font-size: 4vw;
+             font-size: 5.6vw;
              padding: 0vw 14vw 0vw 14vw;
              width: 100%;
              color: #eeeeee;
@@ -51,6 +52,16 @@
              -webkit-background-clip: text;
              text-stroke: 3px transparent;
              -webkit-text-stroke: 3px transparent;
+         }
+
+         @media only screen and (min-width: 900px) {
+             .lead h1 {
+                 font-size: 8vw;
+             }
+
+             .lead h2, .lead h3 {
+                 font-size: 4vw;
+             }
          }
 
          h2 {
@@ -115,7 +126,7 @@
     <body>
         <section class="lead">
             <h1>Web Talks.io</h1>
-            <h2>JavaScript conference</h2>
+            <h2>nice JavaScript conference</h2>
             <h3>May 22, 2020, Kraków</h3>
         </section>
     </body>
