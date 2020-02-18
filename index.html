@@ -18,25 +18,42 @@
              line-height: 1.4;
          }
 
-         h1, h2, h3 {
-             color: #333;
+         body {
+             padding-bottom: 3vw;
          }
 
-         p {
-             font-size: 2vw;
+         p > a {
+             color: #2768a7;
+         }
+
+         h3 > a {
+             color: #eeeeee;
+         }
+
+         h1, h2, h3 {
+             color: #333;
          }
 
          ul, li {
              list-style: none;
          }
 
+         .lead {
+             width: 100%;
+             height: 50vh;
+             background: url('./bg.jpg');
+             background-size: cover;
+             background-position-x: 50%;
+             padding: 0vw 6vw 0vw 6vw;
+         }
+
          .lead h1 {
-             padding: 12vw 14vw 0vw 14vw;
+             padding: 12vw 0 6vw 0;
              font-size: 12vw;
 
              background: #75a27e;
              -webkit-background-clip: text;
-             -webkit-text-stroke: 7px transparent;
+             -webkit-text-stroke: 4px transparent;
              color: #111;
              font-weight: 900;
              margin: 0;
@@ -44,23 +61,83 @@
 
          .lead h2, .lead h3 {
              font-size: 5.6vw;
-             padding: 0vw 14vw 0vw 14vw;
              width: 100%;
              color: #eeeeee;
              background: #111;
              background-clip: text;
              -webkit-background-clip: text;
-             text-stroke: 3px transparent;
-             -webkit-text-stroke: 3px transparent;
+             -webkit-text-stroke: 2px transparent;
+         }
+
+
+         .meetup-photo {
+             background: url(./conf.meetup.jpeg);
+             background-size: cover;
+             background-position-y: center;
+             display: none;
+         }
+
+         .row {
+             display: flex;
+             flex-wrap: wrap;
+         }
+
+         p {
+             font-size: 1rem;
+         }
+
+         .content h1 {
+             font-size: 2rem;
+             color: #333;
+             padding-bottom: 1rem;
+         }
+
+         @media only screen and (min-width: 640px) {
+             .lead {
+                 height: 100vh;
+             }
          }
 
          @media only screen and (min-width: 900px) {
+             .content h1 {
+                 font-size: 2.5vw;
+             }
+
+             .lead {
+                 padding: 0vw 14vw 0vw 14vw;
+             }
+
+             p {
+                 font-size: 2vw;
+             }
+
+             .row > * {
+                 width: 50%;
+             }
+
+             .meetup-photo {
+                 display: block;
+             }
+
              .lead h1 {
                  font-size: 8vw;
+                 padding-bottom: 0;
              }
 
              .lead h2, .lead h3 {
                  font-size: 4vw;
+             }
+
+             .lead {
+                 height: 100vh;
+             }
+
+             .lead h1 {
+                 -webkit-text-stroke: 7px transparent;
+             }
+
+             .lead h2, .lead h3 {
+                 -webkit-text-stroke: 2px transparent;
              }
          }
 
@@ -70,23 +147,8 @@
              width: fit-content;
          }
 
-         .lead {
-             width: 100%;
-             height: 100vh;
-             background: url('./bg.jpg');
-             background-size: cover;
-             background-position-x: 50%;
-         }
-
          .content {
              padding: 6vw;
-             width: 100%;
-         }
-
-         .content h1 {
-             font-size: 2.5vw;
-             color: #333;
-             padding-bottom: 1rem;
          }
 
          .speakers ul {
@@ -101,21 +163,6 @@
              margin: 0 2vw;
          }
 
-         .meetup-photo {
-             background: url(./conf.meetup.jpeg);
-             background-size: cover;
-             background-position-y: center;
-         }
-
-         .row {
-             display: flex;
-             flex-wrap: wrap;
-         }
-
-         .row > * {
-             width: 50%;
-         }
-
          .centered {
              background: #fff;
              padding: 12vw 15vw;
@@ -127,7 +174,32 @@
         <section class="lead">
             <h1>Web Talks.io</h1>
             <h2>nice JavaScript conference</h2>
-            <h3>26 June 2020, Kraków</h3>
+            <h3>26 June 2020</h3>
+            <h3>
+                <a href="http://forumwydarzen.com/">Forum Wydarzeń</a>, Kraków
+            </h3>
         </section>
+
+        <div class="row">
+            <section class="content">
+                <h1>from meetups to conference</h1>
+
+                <p>
+                    Web Talks is organized by people who work in local IT communities. We think that Kraków deserves proper conference about front-end and web technologies. Place to talk, exchange opinions and grow together. We smart small and aim at the stars. And we are here to stay.
+                </p>
+            </section>
+
+            <div class="meetup-photo"></div>
+        </div>
+
+        <div class="content organizers">
+            <h1>Web Talks is a cooperation of</h1>
+
+            <p>
+                <a href="https://womenintechnology.pl/">Women In Technology</a>
+                &
+                <a href="https://www.meetup.com/KrakowJS/">Kraków JS</a>
+            </p>
+        </div>
     </body>
 </html>
