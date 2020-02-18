@@ -20,6 +20,7 @@
 
          body {
              padding-bottom: 3vw;
+             background: #fafafa;
          }
 
          p > a {
@@ -30,6 +31,24 @@
              color: #eeeeee;
          }
 
+         h1 > a {
+             text-decoration: none;
+             color: #111;
+             font-weight: 900;
+             position: relative;
+         }
+
+         h1 > a:after {
+             content: "";
+             display: block;
+             width: 100%;
+             position: absolute;
+             bottom: 0.1em;
+             left: 0;
+             height: 0.07em;
+             background: #111;
+         }
+
          h1, h2, h3 {
              color: #333;
          }
@@ -38,35 +57,31 @@
              list-style: none;
          }
 
+         .sponsorship ul {
+             font-size: 2rem;
+         }
+
+         .sponsorship li {
+             padding-bottom: 0.25em;
+         }
+
          .lead {
              width: 100%;
-             height: 50vh;
-             background: url('./bg.jpg');
              background-size: cover;
              background-position-x: 50%;
-             padding: 0vw 6vw 0vw 6vw;
+             padding: 0vw 6vw 3vw 6vw;
          }
 
          .lead h1 {
-             padding: 12vw 0 6vw 0;
+             padding: 6vw 0 6vw 0;
+             width: fit-content;
              font-size: 12vw;
-
-             background: #75a27e;
-             -webkit-background-clip: text;
-             -webkit-text-stroke: 4px transparent;
-             color: #111;
-             font-weight: 900;
              margin: 0;
          }
 
          .lead h2, .lead h3 {
              font-size: 5.6vw;
              width: 100%;
-             color: #eeeeee;
-             background: #111;
-             background-clip: text;
-             -webkit-background-clip: text;
-             -webkit-text-stroke: 2px transparent;
          }
 
 
@@ -92,14 +107,16 @@
              padding-bottom: 1rem;
          }
 
-         @media only screen and (min-width: 640px) {
-             .lead {
-                 height: 100vh;
-             }
+         .content {
+             padding: 6vw;
          }
 
          @media only screen and (min-width: 900px) {
-             .content h1 {
+             .content {
+                 padding: 6vw 14vw;
+             }
+
+             .content h1, .sponsorship ul {
                  font-size: 2.5vw;
              }
 
@@ -127,28 +144,11 @@
              .lead h2, .lead h3 {
                  font-size: 4vw;
              }
-
-             .lead {
-                 height: 100vh;
-             }
-
-             .lead h1 {
-                 -webkit-text-stroke: 7px transparent;
-             }
-
-             .lead h2, .lead h3 {
-                 -webkit-text-stroke: 2px transparent;
-             }
          }
 
          h2 {
-             color: #fff;
              font-style: italic;
              width: fit-content;
-         }
-
-         .content {
-             padding: 6vw;
          }
 
          .speakers ul {
@@ -167,35 +167,43 @@
              background: #fff;
              padding: 12vw 15vw;
          }
+
+         .sponsorship p {
+             margin-top: 1em;
+         }
         </style>
     </head>
 
     <body>
         <section class="lead">
-            <h1>Web Talks.io</h1>
+            <h1>
+                <a href="/">
+                    Web Talks.io
+                </a>
+            </h1>
             <h2>nice JavaScript conference</h2>
-            <h3>26 June 2020</h3>
-            <h3>
-                <a href="http://forumwydarzen.com/">Forum Wydarzeń</a>, Kraków
-            </h3>
+            <h3>Become a sponsor</h3>
         </section>
 
-        <div class="row">
-            <section class="content">
-                <h1>from meetups to conference</h1>
+        <section class="content sponsorship">
+            <h1>Sponsorship offers</h1>
 
-                <p>
-                    Web Talks is organized by people who work in local IT communities. We think that Kraków deserves proper conference about front-end and web technologies. Place to talk, exchange opinions and grow together. We smart small and aim at the stars. And we are here to stay.
-                </p>
-            </section>
+            <ul>
+                <li><a href="/sponsorship/brown_sponsorship.pdf">Brown Sponsor</a></li>
+                <li><a href="/sponsorship/silver_sponsorship.pdf">Silver Sponsor</a></li>
+                <li><a href="/sponsorship/gold_sponsorship.pdf">Gold Sponsor</a></li>
+                <li><a href="/sponsorship/afterparty_sponsorship.pdf">Afterparty Sponsor</a> (exclusive)</li>
+                <li><a href="/sponsorship/headline_sponsorship.pdf">Headline Sponsor</a> (exclusive)</li>
+            </ul>
 
-            <div class="meetup-photo"></div>
-        </div>
+            <p>
+                We’re more than happy to talk and hear your ideas about cooperation
+            </p>
 
-        <div class="content become-a-sponsor">
-            <h1>Help us make this awesome conference!
-                <a href="/sponsorship.html">Become a sponsor!</a></h1>
-        </div>
+            <p class="contact email">
+                e-mail organizers at: <a href="mailto:meetjs.krk@gmail.com">meetjs.krk@gmail.com</a>
+            </p>
+        </section>
 
         <div class="content organizers">
             <h1>Web Talks is a cooperation of</h1>
