@@ -26,6 +26,14 @@
              color: #2768a7;
          }
 
+         .become-a-sponsor a {
+             color: #2768a7;
+         }
+
+         .content.become-a-sponsor {
+             margin: 7vw 0 8vw 0;
+         }
+
          h3 > a {
              color: #eeeeee;
          }
@@ -89,7 +97,39 @@
          .content h1 {
              font-size: 2rem;
              color: #333;
-             padding-bottom: 1rem;
+             margin-bottom: 1rem;
+         }
+
+         h2 {
+             color: #fff;
+             font-style: italic;
+             width: fit-content;
+         }
+
+         .content {
+             padding: 0 6vw;
+             margin: 6vw 0;
+         }
+
+         .speakers ul {
+             display: flex;
+             margin: 0 -2vw;
+         }
+
+         .speakers li {
+             width: 33%;
+             height: 200px;
+             border-bottom: 1px solid #333;
+             margin: 0 2vw;
+         }
+
+         .centered {
+             background: #fff;
+             padding: 12vw 15vw;
+         }
+
+         .started-from-the-bottom {
+             border-top: 3px solid #222;
          }
 
          @media only screen and (min-width: 640px) {
@@ -113,6 +153,15 @@
 
              .row > * {
                  width: 50%;
+             }
+
+
+             .row.golden-ratio > *:first-child {
+                 width: 61.8%;
+             }
+
+             .row.golden-ratio > *:nth-child(2) {
+                 width: 38.2%;
              }
 
              .meetup-photo {
@@ -140,33 +189,6 @@
                  -webkit-text-stroke: 2px transparent;
              }
          }
-
-         h2 {
-             color: #fff;
-             font-style: italic;
-             width: fit-content;
-         }
-
-         .content {
-             padding: 6vw;
-         }
-
-         .speakers ul {
-             display: flex;
-             margin: 0 -2vw;
-         }
-
-         .speakers li {
-             width: 33%;
-             height: 200px;
-             border-bottom: 1px solid #333;
-             margin: 0 2vw;
-         }
-
-         .centered {
-             background: #fff;
-             padding: 12vw 15vw;
-         }
         </style>
     </head>
 
@@ -180,7 +202,7 @@
             </h3>
         </section>
 
-        <div class="row">
+        <div class="row golden-ratio started-from-the-bottom">
             <section class="content">
                 <h1>from meetups to conference</h1>
 
