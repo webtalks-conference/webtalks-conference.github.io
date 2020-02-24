@@ -56,8 +56,9 @@
          }
 
          .lead h1 {
-             padding: 12vw 0 6vw 0;
+             padding: 9vw 0 0 0;
              font-size: 12vw;
+             line-height: 1;
 
              background: #75a27e;
              -webkit-background-clip: text;
@@ -65,6 +66,10 @@
              color: #111;
              font-weight: 900;
              margin: 0;
+         }
+
+         .lead h2 {
+             padding-bottom: 0.5em;
          }
 
          .lead h2, .lead h3 {
@@ -77,6 +82,9 @@
              -webkit-text-stroke: 2px transparent;
          }
 
+         .lead h3, .lead-numbers p, .lead-copy p {
+             font-size: 4vw;
+         }
 
          .meetup-photo {
              background: url(./conf.meetup.jpeg);
@@ -173,8 +181,12 @@
                  padding-bottom: 0;
              }
 
-             .lead h2, .lead h3 {
+             .lead h2 {
                  font-size: 4vw;
+             }
+
+             .lead h3, .lead-numbers p, .lead-copy p {
+                 font-size: 3vw;
              }
 
              .lead {
@@ -189,6 +201,24 @@
                  -webkit-text-stroke: 2px transparent;
              }
          }
+
+         .lead-numbers, .lead-copy {
+             display: flex;
+         }
+
+         .lead-copy {
+             margin-top: 0.5em;
+         }
+
+         .lead-numbers p, .lead-copy p {
+             color: #fff;
+             padding-right: 3ch;
+             margin-top: 0.5em;
+             background: #111;
+             background-clip: text;
+             -webkit-background-clip: text;
+             -webkit-text-stroke: 2px transparent;
+         }
         </style>
     </head>
 
@@ -200,6 +230,16 @@
             <h3>
                 <a href="http://forumwydarzen.com/">Forum Wydarzeń</a>, Kraków
             </h3>
+
+            <div class="lead-copy">
+                <p>day for conference</p>
+                <p>night for afterparty</p>
+            </div>
+
+            <div class="lead-numbers">
+                <p class="lead-speakers">10+ speakers</p>
+                <p class="lead-developers">250+ developers</p>
+            </div>
         </section>
 
         <div class="row golden-ratio started-from-the-bottom">
