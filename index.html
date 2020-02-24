@@ -210,14 +210,26 @@
              margin-top: 0.5em;
          }
 
-         .lead-numbers p, .lead-copy p {
+         .lead-numbers p, .lead-day {
              color: #fff;
-             padding-right: 3ch;
-             margin-top: 0.5em;
              background: #111;
              background-clip: text;
              -webkit-background-clip: text;
              -webkit-text-stroke: 2px transparent;
+         }
+
+         .lead-numbers p, .lead-copy p {
+             padding-right: 1ch;
+             margin-top: 0.5em;
+         }
+
+         .lead-after {
+             background: linear-gradient(#ffffff, #b087ff);
+             font-weight: bold;
+
+             /* clip hackery */
+             -webkit-background-clip: text;
+             -webkit-text-fill-color: transparent;
          }
         </style>
     </head>
@@ -232,12 +244,12 @@
             </h3>
 
             <div class="lead-copy">
-                <p>day for conference</p>
-                <p>night for afterparty</p>
+                <p class="lead-day">day for conference,</p>
+                <p class="lead-after">night for afterparty</p>
             </div>
 
             <div class="lead-numbers">
-                <p class="lead-speakers">10+ speakers</p>
+                <p class="lead-speakers">10+ speakers,</p>
                 <p class="lead-developers">250+ developers</p>
             </div>
         </section>
