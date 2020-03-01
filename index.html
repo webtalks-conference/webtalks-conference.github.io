@@ -175,10 +175,33 @@
          }
 
          .speakers-list h1 {
-             color: #4a1856;
+             color: #fff;
+             position: absolute;
+             bottom: -1rem;
+             background: #5e1b71;
+             width: 100%;
+             margin: 0;
+             padding: 0.5rem 1rem;
+         }
+
+         .speakers-list figure {
+             padding: 0;
+             margin: 0;
+             position: relative;
+             margin-bottom: 2rem;
+         }
+
+         .speakers-list img {
+             width: 50%;
+             margin: 0;
+             padding: 0;
          }
 
          @media only screen and (min-width: 960px) {
+             .speakers-list img {
+                 width: 100%;
+             }
+
              .speakers-list {
                  flex-direction: row;
              }
@@ -304,9 +327,13 @@
 
                 <ul class="speakers-list">
                     <li>
-                        <h1>
-                            Marta Wiśniewska
-                        </h1>
+                        <figure>
+                            <img src="/speakers/marta_wisniewska.png" />
+                            <h1>
+                                Marta Wiśniewska
+                            </h1>
+                        </figure>
+
                         <p>
                             Marta is a Google Developer Expert in Angular and Web Technologies from Poland. She is an international speaker, blogger, enthusiast of Angular, PWA, hybrid apps who loves exploring new web features and following hottest trends in tech. Marta is passionate about sharin knowledge in the community and spreading her love for tech.
                         </p>
@@ -315,9 +342,13 @@
                         </p>
                     </li>
                     <li>
-                        <h1>
-                            Andrii Lundiak
-                        </h1>
+                        <figure>
+                            <img src="/speakers/andrii_lundiak.jpeg" />
+                            <h1>
+                                Andrii Lundiak
+                            </h1>
+                        </figure>
+
                         <p>
                             Fullstack Web Developer at EQ Tek. 10+ years experience. JavaScript, CSS, HTML, NodeJS/npm. Former PHP, Java developer. Passionate about Git. Sometimes doing Unix/Bash scripting, configuring Jenkins/Bamboo. Many years worked with BackboneJS/MarionetteJS stack. These days I spend more time with JSX/ReactJS and TypeScript for work-related projects.
                         </p>
@@ -328,9 +359,12 @@
                             Github - <a href="https://github.com/alundiak">@alundiak</a>, Twitter - <a href="https://twitter.com/landike">@landike</a>
                         </p>
                     </li>
-                    <li>
-                        <h1>tba</h1>
-                    </li>
+                    <!-- <li>
+                         <figure>
+                         <div></div>
+                         <h1>tba</h1>
+                         </figure>
+                         </li> -->
                 </ul>
             </section>
         </div>
