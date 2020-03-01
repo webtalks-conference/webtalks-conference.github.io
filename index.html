@@ -146,7 +146,48 @@
              }
          }
 
+         .speakers-list {
+             width: 100%;
+             display: flex;
+             flex-direction: column;
+             margin: 0 -2vw;
+             margin-top: 2rem;
+         }
+
+         .speakers-list li {
+             padding: 0 2vw 2rem 2vw;
+         }
+
+         .speakers-list h1 {
+             font-size: 1.5rem;
+         }
+
+         .speakers-list p {
+             font-size: 1rem;
+         }
+
+         .speakers-list p + p {
+             margin-top: 1rem;
+         }
+
+         .row-speakers .content > h1 {
+             color: #9e6cab;
+         }
+
+         .speakers-list h1 {
+             color: #4a1856;
+         }
+
          @media only screen and (min-width: 900px) {
+             .speakers-list {
+                 flex-direction: row;
+             }
+
+             .speakers-list li {
+                 flex-basis: 33%;
+                 padding: 0 2vw;
+             }
+
              .content h1 {
                  font-size: 2.5vw;
              }
@@ -253,6 +294,43 @@
                 <p class="lead-developers">250+ developers</p>
             </div>
         </section>
+
+        <div class="row-single row-speakers">
+            <section class="content">
+                <h1>our speakers</h1>
+
+                <ul class="speakers-list">
+                    <li>
+                        <h1>
+                            Marta Wiśniewska
+                        </h1>
+                        <p>
+                            Marta is a Google Developer Expert in Angular and Web Technologies from Poland. She is an international speaker, blogger, enthusiast of Angular, PWA, hybrid apps who loves exploring new web features and following hottest trends in tech. Marta is passionate about sharin knowledge in the community and spreading her love for tech.
+                        </p>
+                        <p>
+                            Currently, she satisfies herself as an organizer in <a href="https://www.facebook.com/WomenTechmakersWarsaw/">Women Techmakers Warsaw</a> and <a href="https://gdgwarszawa.pl/">Google Developers Group Warsaw</a> and <a href="https://pwafire.org/">PWA Fire</a> co-creator.
+                        </p>
+                    </li>
+                    <li>
+                        <h1>
+                            Andrii Lundiak
+                        </h1>
+                        <p>
+                            Fullstack Web Developer at EQ Tek. 10+ years experience. JavaScript, CSS, HTML, NodeJS/npm. Former PHP, Java developer. Passionate about Git. Sometimes doing Unix/Bash scripting, configuring Jenkins/Bamboo. Many years worked with BackboneJS/MarionetteJS stack. These days I spend more time with JSX/ReactJS and TypeScript for work-related projects.
+                        </p>
+                        <p>
+                            Hobbies: Genealogy/Genetics, History, Languages, #EDM. I run 6 blogs. I'm Ukrainian. I worked in Ukraine, Bulgaria and since 2015 I work in Poland. Technical education (Electronics and IT).
+                        </p>
+                        <p>
+                            Github - <a href="https://github.com/alundiak">@alundiak</a>, Twitter - <a href="https://twitter.com/landike">@landike</a>
+                        </p>
+                    </li>
+                    <li>
+                        <h1>tba</h1>
+                    </li>
+                </ul>
+            </section>
+        </div>
 
         <div class="row golden-ratio started-from-the-bottom">
             <section class="content">
