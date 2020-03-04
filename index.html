@@ -181,7 +181,6 @@
              color: #fff;
              position: absolute;
              bottom: -1rem;
-             /* background: #5d1671; */
              background: #333;
              width: 100%;
              margin: 0;
@@ -202,6 +201,36 @@
              padding: 0;
          }
 
+         .menu {
+             height: 70vh;
+             display: flex;
+             flex-direction: column;
+             justify-content: center;
+         }
+
+         .menu ul {
+             display: flex;
+             padding: 2rem 0;
+             flex-direction: column;
+         }
+
+         .menu li {
+             width: 100%;
+             text-align: center;
+             padding: 1rem;
+             font-size: 2rem;
+         }
+
+         .menu a {
+             color: #333;
+             text-shadow: 1px 1px 1px #c1c1c1;
+             text-decoration: none;
+         }
+
+         .menu a:hover {
+             text-decoration: underline;
+         }
+
          @media only screen and (min-width: 960px) {
              .speakers-list img {
                  width: 100%;
@@ -214,6 +243,19 @@
              .speakers-list li {
                  flex-basis: 33%;
                  padding: 0 2vw;
+             }
+
+             .menu {
+                 height: auto;
+                 border-bottom: 1px solid #333;
+             }
+
+             .menu ul {
+                 flex-direction: row;
+             }
+
+             .menu li {
+                 width: 33%;
              }
          }
 
@@ -324,6 +366,14 @@
                 <p class="lead-speakers">10+ speakers,</p>
                 <p class="lead-developers">250+ developers</p>
             </div>
+        </section>
+
+        <section class="menu">
+            <ul>
+                <li><a href="https://app.evenea.pl/event/webtalks/">Get some tickets!</a></li>
+                <li><a href="/sponsorship.html">Become a sponsor!</a></li>
+                <li><a href="https://forms.gle/EzD8PtRXDj46CeJJA">Become a speaker!</a></li>
+            </ul>
         </section>
 
         <div class="row-single row-speakers">
