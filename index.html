@@ -179,9 +179,32 @@
              padding: 0 2vw 2rem 2vw;
          }
 
-         .speakers-list p {
+         .content .row-talks-title {
+             margin-bottom: 6rem;
+         }
+
+         .row-talks {
+             background: #fff;
+             padding-top: 1rem;
+             padding-bottom: 6rem;
+         }
+
+         .talks-list h2 {
+             color: #333;
+         }
+
+         .talks-list ul li:before {
+             content: "– ";
+         }
+
+         .talks-list li {
              font-size: 1rem;
-             line-height: 1.5rem;
+             line-height: 1.6rem;
+         }
+
+         .talks-list p, .speakers-list p {
+             font-size: 1rem;
+             line-height: 1.6rem;
          }
 
          .speakers-list p + p {
@@ -344,6 +367,12 @@
          }
 
          @media only screen and (min-width: 640px) {
+             .row-talks {
+                 padding-left: 15%;
+                 padding-right: 15%;
+                 margin-bottom: 12rem;
+             }
+
              .menu li:last-of-type a {
                  padding-bottom: 1.75rem;
              }
@@ -456,12 +485,37 @@
                             Github - <a href="https://github.com/alundiak">@alundiak</a>, Twitter - <a href="https://twitter.com/landike">@landike</a>
                         </p>
                     </li>
-                    <!-- <li>
-                         <figure>
-                         <div></div>
-                         <h1>tba</h1>
-                         </figure>
-                         </li> -->
+                </ul>
+            </section>
+        </div>
+
+        <div class="row-single row-talks">
+            <section class="content">
+                <h1 class="row-talks-title">agenda</h1>
+
+                <ul class="talks-list">
+                    <li>
+                        <h2>Marta Wiśniewska</h2>
+                        <h1>Offline First applications</h1>
+
+                        <p>
+                            Let’s take a deep dive into PWAs and shift our focus on web performance!
+                        </p>
+
+                        <p>
+                            In this talk, I will tell you the big secrets on how to improve the speed of your apps with progressive enhancement.
+                            We will take a look for some topics like:
+                        </p>
+                        <ul>
+                            <li>caching strategies and design patterns to maximize PWAs’ performance,</li>
+                            <li>demystifying the app shell model,</li>
+                            <li>PWAA? - Progressive Web Assembly Apps - how to make it real?</li>
+                            <li>the most common issues and fixes based on PWAs’ performance tests,</li>
+                            <li>how to keep a progressive style? Tips and tricks for your CSS and assets</li>
+                        </ul>
+
+                        </p>
+                    </li>
                 </ul>
             </section>
         </div>
