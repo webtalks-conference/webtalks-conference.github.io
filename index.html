@@ -20,6 +20,7 @@
 
          body {
              padding-bottom: 3vw;
+             background: #fafafa;
          }
 
          p > a {
@@ -50,7 +51,7 @@
          }
 
          .lead:after {
-             background-size: cover;
+             background-size: 420%;
              background-position-x: 50%;
              background-image: url('./bg.jpg');
              content: '';
@@ -64,9 +65,9 @@
          }
 
          .lead h1 {
-             padding: 9vw 0 0 0;
-             font-size: 12vw;
-             line-height: 1;
+             padding: 4.5rem 0 0 0;
+             font-size: 3rem;
+             line-height: 3rem;
 
              color: #fff;
              text-shadow: 1px 1px 1px #333;
@@ -75,18 +76,32 @@
          }
 
          .lead h2 {
+             padding-top: 0.25em;
              padding-bottom: 0.5em;
-         }
+             font-size: 2.25rem;
+             line-height: 3rem;
 
-         .lead h2, .lead h3 {
-             font-size: 5.6vw;
              width: 100%;
              color: #eeeeee;
              text-shadow: 1px 1px 1px #333;
          }
 
-         .lead h3, .lead-numbers p, .lead-copy p {
-             font-size: 4vw;
+         .lead h3 {
+             font-size: 2.25rem;
+             line-height: 3rem;
+
+             width: 100%;
+             color: #eeeeee;
+             text-shadow: 1px 1px 1px #333;
+         }
+
+         .lead-copy {
+             padding-top: 1rem;
+         }
+
+         .lead-numbers p, .lead-copy p {
+             font-size: 1.75rem;
+             line-height: 2.5rem;
          }
 
          .meetup-photo {
@@ -106,6 +121,7 @@
          }
 
          .content h1 {
+             line-height: 3rem;
              font-size: 2rem;
              color: #333;
              margin-bottom: 1rem;
@@ -139,10 +155,8 @@
              padding: 12vw 15vw;
          }
 
-         @media only screen and (min-width: 640px) {
-             .lead {
-                 height: 100vh;
-             }
+         .lead {
+             height: 100vh;
          }
 
          .row-speakers {
@@ -165,12 +179,9 @@
              padding: 0 2vw 2rem 2vw;
          }
 
-         .speakers-list h1 {
-             font-size: 1.5rem;
-         }
-
          .speakers-list p {
              font-size: 1rem;
+             line-height: 1.5rem;
          }
 
          .speakers-list p + p {
@@ -178,6 +189,8 @@
          }
 
          .speakers-list h1 {
+             font-size: 1.5rem;
+             line-height: 2.25rem;
              color: #fff;
              position: absolute;
              bottom: -1rem;
@@ -202,33 +215,43 @@
          }
 
          .menu {
-             height: 70vh;
              display: flex;
              flex-direction: column;
              justify-content: center;
+             z-index: 4;
+             top: 0;
+             left: 0;
+             width: 100%;
+             background: #fff;
          }
 
          .menu ul {
              display: flex;
-             padding: 2rem 0;
              flex-direction: column;
          }
 
          .menu li {
              width: 100%;
-             text-align: center;
-             padding: 1rem;
-             font-size: 2rem;
+         }
+
+         .menu li:last-of-type a {
+             padding-bottom: 1.5rem;
          }
 
          .menu a {
+             font-style: italic;
+             display: block;
+             width: 100%;
+             text-align: left;
+             padding: 0.75rem 3rem 1rem 3rem;
+             font-size: 1.5rem;
              color: #333;
-             text-shadow: 1px 1px 0px #c1c1c1;
              text-decoration: none;
          }
 
          .menu a:hover {
-             text-decoration: underline;
+             color: #000;
+             background: #dedede;
          }
 
          @media only screen and (min-width: 960px) {
@@ -240,22 +263,13 @@
                  flex-direction: row;
              }
 
-             .speakers-list li {
-                 flex-basis: 33%;
-                 padding: 0 2vw;
-             }
-
              .menu {
-                 height: auto;
-                 border-bottom: 1px solid #333;
+                 position: sticky;
              }
 
-             .menu ul {
-                 flex-direction: row;
-             }
-
-             .menu li {
-                 width: 33%;
+             .speakers-list li {
+                 flex-basis: 33.3333%;
+                 padding: 0 2vw;
              }
          }
 
@@ -290,38 +304,22 @@
                  display: block;
              }
 
-             .lead h1 {
-                 font-size: 8vw;
-                 padding-bottom: 0;
-             }
+             /* .lead h1 {
+                font-size: 8vw;
+                padding-bottom: 0;
+                }
 
-             .lead h2 {
-                 font-size: 4vw;
-             }
+                .lead h2 {
+                font-size: 4vw;
+                }
 
-             .lead h3, .lead-numbers p, .lead-copy p {
-                 font-size: 3vw;
-             }
-
-             .lead {
-                 height: 100vh;
-             }
-
-             .lead h1 {
-                 -webkit-text-stroke: 7px transparent;
-             }
-
-             .lead h2, .lead h3 {
-                 -webkit-text-stroke: 2px transparent;
-             }
+                .lead h3, .lead-numbers p, .lead-copy p {
+                font-size: 3vw;
+                } */
          }
 
          .lead-numbers, .lead-copy {
              display: flex;
-         }
-
-         .lead-copy {
-             margin-top: 0.5em;
          }
 
          .lead-numbers p, .lead-day {
@@ -333,8 +331,8 @@
          }
 
          .lead-numbers p, .lead-copy p {
-             padding-right: 1ch;
-             margin-top: 0.5em;
+             /* padding-right: 1ch; */
+             margin-top: 0.5rem;
          }
 
          .lead-after {
@@ -344,6 +342,54 @@
              /* clip hackery */
              -webkit-background-clip: text;
              -webkit-text-fill-color: transparent;
+         }
+
+         @media only screen and (min-width: 640px) {
+             .menu li:last-of-type a {
+                 padding-bottom: 1.75rem;
+             }
+
+             .lead:after {
+                 background-size: cover;
+             }
+
+             .menu ul {
+                 flex-direction: row;
+             }
+
+             .menu li {
+                 width: 33.3333%;
+             }
+
+             .menu a {
+                 text-align: center;
+                 padding: 1.5rem 1.5rem 1.75rem 1.5rem;
+                 font-size: 2rem;
+                 color: #333;
+                 text-decoration: none;
+             }
+
+             .lead h1 {
+                 padding: 6rem 0 0 0;
+                 font-size: 6rem;
+                 line-height: 6rem;
+             }
+
+             .lead h2 {
+                 padding-top: 0.25em;
+                 padding-bottom: 1em;
+                 font-size: 3rem;
+                 line-height: 4.5rem;
+             }
+
+             .lead h3 {
+                 font-size: 2.6rem;
+                 line-height: 3rem;
+
+             }
+             .lead-copy {
+                 padding-top: 2.25rem;
+             }
          }
         </style>
     </head>
@@ -358,21 +404,19 @@
             </h3>
 
             <div class="lead-copy">
-                <p class="lead-day">day for conference,</p>
-                <p class="lead-after">night for afterparty</p>
+                <p class="lead-day">day for conference, night for afterparty</p>
             </div>
 
             <div class="lead-numbers">
-                <p class="lead-speakers">10+ speakers,</p>
-                <p class="lead-developers">250+ developers</p>
+                <p class="lead-speakers">10+ speakers, 250+ developers</p>
             </div>
         </section>
 
         <section class="menu">
             <ul>
-                <li><a href="https://app.evenea.pl/event/webtalks/">Get some tickets!</a></li>
-                <li><a href="/sponsorship.html">Become a sponsor!</a></li>
-                <li><a href="https://forms.gle/EzD8PtRXDj46CeJJA">Become a speaker!</a></li>
+                <li><a href="https://app.evenea.pl/event/webtalks/">Get some tickets</a></li>
+                <li><a href="/sponsorship.html">Become a sponsor</a></li>
+                <li><a href="https://forms.gle/EzD8PtRXDj46CeJJA">Become a speaker</a></li>
             </ul>
         </section>
 
